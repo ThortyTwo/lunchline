@@ -8,8 +8,14 @@
 .logo {
   padding-bottom: 1em;
   padding-top: 1em;
-  width: auto;
-  height: auto;
+  /*width: auto;
+  height: auto;*/
+  display: inline;
+  /*margin: 0 auto;*/
+  /*text-align: center;*/
+  /*float: left;*/
+  /*margin-left: 30%;*/
+
 }
 
 #search-bar {
@@ -18,6 +24,8 @@
   height: 25px;
   padding: 0 5px;
   font-size: 12px;
+  display: inline;
+  margin-top: -5%;
 }
 
 h1, h2 {
@@ -103,8 +111,10 @@ a.list-group-item {
 }
 
 #restViewMap {
-  height: 300px;
-  width: 300px;
+  display: inline-block;
+  margin: 0 auto;
+  height: 400px;
+  width: 95%;
   padding: 0px 15px;
 }
 
@@ -267,6 +277,7 @@ and (min-device-width : 736px) {
   #waitTitle {
     padding-right: 0.5em;
   }
+
 }
 
 .scrollable {
@@ -281,3 +292,13 @@ and (min-device-width : 736px) {
    height: auto;
    width: auto;
 }
+
+@media(max-width: 600px){
+  #search-bar {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
